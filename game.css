@@ -1,0 +1,212 @@
+
+/* make body with background image that can be zoomed to center when window resized to smaller size */
+body{
+	margin: 0;
+	/*background-image: url('background.jpg');*/
+	background-color: white;
+	opacity: 1;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	position: relative;
+	height: 100%;
+	padding-right: 200px;
+	padding-left: 200px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.icons{
+	flood-color: #E15E51;
+	width: 50px;
+	height: 50px;
+}
+/*for more princile in UI i used a table*/
+table{
+ 	width: 100%;
+ 	height: 100%;
+ 	table-layout:fixed;	
+ }
+
+/* for each cell of table*/
+table td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* white rectangle in center of body */
+.content{
+	width: inherit;
+	padding-right: 25px;
+	padding-left: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	/*background-color: ghostwhite;*/
+	background: linear-gradient(to right, whitesmoke 50%, white 50%);
+	opacity: 1;
+	box-shadow: 0px 0px 35px gray;
+ 	/*border-radius: 20px;*/
+ }
+
+
+
+/* list of starships name */
+.my_button{
+	position: center relative;
+	border-radius: 4px;
+	border: 1px solid darkgray;
+	width: 60%;
+	height: 50px;
+	margin-top: 40px;
+	margin-right: 20%;
+	margin-left: 20%;
+	margin-bottom: 40px;
+	font-family: Lato;
+	text-align: center;
+	color: #423736;
+}
+
+
+/* headers of table - titles*/
+.header{
+	align-content: center;
+	width: 100%;
+	position: relative;
+	color :#E15E51;
+	font-size: 24px;
+	font-family: Lato;
+	font-weight: 500;
+	text-align: center;
+}
+
+.full_width{
+	width: 100%;
+	position: center relative;
+	text-align: center;
+}
+
+.dice{
+	width: 80px;
+	height: 80px;
+	margin: 5px;
+	box-shadow: 0px 0px 15px lightgray;
+}
+
+.red_score{
+	position: relative;
+	color :#E15E51;
+	font-size: 32px;
+	font-family: Lato;
+	text-align: center;
+}
+
+.player{
+ 	align-content: center;
+	width: 100%;
+	position: relative;
+	color :#423736;
+	font-size: 32px;
+	font-weight: 300;
+	font-family: Lato;
+	text-align: center;
+}
+
+.red_box{
+	width: 35%;
+	font-size: 20px;
+ 	font-family: Lato;
+	padding: 5px;
+ 	margin: auto;
+ 	margin-top: 40px;
+ 	text-align: center;
+ 	position: center relative;
+ 	background-color: #E15E51;
+}
+
+.dark-text{
+	align-content: center;
+	width: 100%;
+	position: relative;
+	font-size: 24px;
+	font-family: Lato;
+	text-align: center;
+	color: #423736;
+	margin-top: 20px;
+}
+
+.top_margin{
+	margin-top: 18%;
+}
+
+.current{
+	margin-top: 5px;
+	color : #423736 ;
+}
+.score{
+	margin-top: 10px;
+	color : white ;
+}
+.column {
+  float: left;
+  width: 44%;
+}
+.center_column {
+  float: left;
+  width: 12%;
+}
+.column2 {
+  float: left;
+  width: 33%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.left, .right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+}	
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.material-textfield {
+  position: relative;  
+}
+
+input {
+  font-family: Lato;
+  font-size: 1rem;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;  
+  padding: 1rem 0.7rem;
+  color: gray;
+  transition: 0.1s ease-out;
+}
+input:focus {
+  border-color: #423736;  
+}
+input:focus + label {
+  color: #423736;
+  top: 0;
+  transform: translateY(-50%) scale(.9);
+}
+input:not(:placeholder-shown) + label {
+  top: 0;
+  transform: translateY(-50%) scale(.9);
+}
