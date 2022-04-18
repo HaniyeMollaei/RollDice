@@ -4,56 +4,65 @@
 	<meta charset="UTF-8">
     <link rel="stylesheet" href="game.css">
     <link rel="stylesheet" href="fonts.css">
-    <title>DICE</title>
+    <title>DICE 2</title>
 </head>
 <body> <!-- section for setting background image -->
 	<div class="content" > <!-- contain content of page in a white Rectangle in center of webpage -->
 		<div class="row">
-			<!-- <object data="./svg/add-circle-outline.svg" class="icons"> </object> -->
-		  	<p class="header">New Game</p>
+		  	<p class="header" id="new_game">New Game</p>
 		</div>
 
 		<div class="row">
-		  <div class="column2">
-		  	<p class="player">Player 1</p>
-		  </div>
-		  <div class="column2">
-		  	<p class="player">Player 2</p>
-		  </div>
-		</div>
-
-		<div class="row">
-		  <div class="column2">
-		  	<p class="header">0</p>
-		  </div>
-		  <div class="column2">
-		  	<p class="header">0</p>
-		  </div>
-		</div>
-
-		<div class="row">
-		  <div class="column">
-		  	<div class="red_box">
-		  		<div class="row , current">Current</div>
-		  		<div class="row , score">0</div>
-		  	</div> 
-		  </div>
-		  <div class="center_column">
-		  	<div class="row , dark-text">Roll Dice</div>
-		  		<div class="row , dark-text">Hold</div>
-		  </div>
-		  <div class="column">
-		  	<div class="red_box">
-		  		<div class="row , current">Current</div>
-		  		<div class="row , score">0</div>
+		  	<div class="column2">
+			  	<div class="row">
+			  		<p class="player" id="player1">Player 1</p>
+			  	</div>
+			  	<div class="row">
+			  		<p class="red_score" id="player1_score">0</p>
+			  	</div>
+			  	<div class="row">
+			  		<div class="red_box">
+			  			<div class="row , current">Current</div>
+			  			<div class="row , score"  id="player1_current_score">0</div>
+			  		</div>
+			  	</div>
 		  	</div>
-		  </div>
-		</div>
 
-		<div class="my_button">
-		  	<p >FINAL SCORE</p>
+
+		  	<div class="column2">
+		  		<div class="top_margin">
+		  			<div class="row"><div class="full_width"><img src="./img/1.png" class="dice" id="dice"></div></div>
+		  			<div class="row"><div class="full_width"><img src="./img/1.png" class="dice" id="dice2"></div></div>
+		  			<div class="row , dark-text" id="roll_dice">Roll Dice</div>
+			  		<div class="row , dark-text" id="hold">Hold</div>
+			  		<div class="container">
+		    			<div class="material-textfield">
+		      				<input placeholder="Final Score" type="text" id="final_score">
+		    			</div>
+		  			</div>
+		  			<div id="result" class="header"></div>
+			  		<!-- <div class="row"><div class="my_button"><input type="text" id="final_score" name="final_score"></div></div> -->
+			  		<!-- <div class="row"><div class="my_button"><p>FINAL SCORE</p></div></div> -->
+		  		</div>
+		  	</div>
+
+
+		  	<div class="column2">
+			  	<div class="row">
+			  		<p class="player" id="player2">Player 2</p>
+			  	</div>
+			  	<div class="row">
+			  		<p class="red_score" id="player2_score">0</p>
+			  	</div>
+			  	<div class="row">
+			  		<div class="red_box">
+				  		<div class="row , current">Current</div>
+				  		<div class="row , score" id="player2_current_score">0</div>
+		  			</div>
+		  		</div>
+		  	</div>
+
 		</div>
-		
 	</div>
 	<script src="game.js"></script>
 </body>
